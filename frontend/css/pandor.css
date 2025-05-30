@@ -282,24 +282,79 @@ li {
 
 .portofolio_wrapper {
 	margin-bottom: 10vh;
+	overflow: hidden;
+	position: relative;
 }
 
-.portofolio_grid {
+.portofolio_slider_wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.portofolio_slider {
+	display: flex;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	width: 100%;
+	gap: 40px;
+	padding: 20px 0;
+}
+
+.portofolio_slider::-webkit-scrollbar {
+	display: none;
+}
+
+.portofolio_slide {
 	display: flex;
 	align-items: center;
 	padding: 0 30vh;
 	gap: 20px;
 	flex-wrap: wrap;
+	flex: 0 0 100%;
+	scroll-snap-align: start;
+	box-sizing: border-box;
 }
-  
+
 .pop {
 	font-size: 1.5rem;
-	flex: 1 1 300px;    
+	flex: 1 1;
 }
 
 .portofolio_image {
 	border-radius: 15px;
 	object-fit: cover;
+	width: 400px;
+	height: 260px;
+}
+
+.nav-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
+	border: none;
+	border-radius: 100%;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 10;
+	transition: background 0.3s ease;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.nav-button.left {
+	left: 100px;
+}
+
+.nav-button.right {
+	right: 100px;
 }
 
 hr {
@@ -536,6 +591,25 @@ blockquote {
 	}
 
 	.mail {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.portofolio_slide {
+		padding: 0 10vw;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.pop {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-button {
 		display: none;
 	}
 }
