@@ -584,3 +584,11 @@ blockquote {
 		display: none;
 	}
 }
+
+.button_wrapper2 {
+	background: #8888881c;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 15vh;
+	padding-bottom: 5vh;
+}
