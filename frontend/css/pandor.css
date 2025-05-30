@@ -286,6 +286,20 @@ li {
 
 .portofolio_grid {
 	display: flex;
+	align-items: center;
+	padding: 0 30vh;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+  
+.pop {
+	font-size: 1.5rem;
+	flex: 1 1 300px;    
+}
+
+.portofolio_image {
+	border-radius: 15px;
+	object-fit: cover;
 }
 
 hr {
@@ -493,6 +507,7 @@ blockquote {
 		margin: auto;
 	}
 
+	.pop,
 	.text-box p {
 		margin-top: 10px;
 		font-size: 1.2rem;
