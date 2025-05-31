@@ -316,6 +316,7 @@ li {
 	flex: 0 0 100%;
 	scroll-snap-align: start;
 	box-sizing: border-box;
+	gap: 100px;
 }
 
 .pop {
