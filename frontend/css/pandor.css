@@ -440,6 +440,20 @@ blockquote {
 	height: 200px;
 }
 
+.expert_name {
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+	flex-direction: row;
+	align-items: center;
+}
+
+.expert_img {
+	width: 5vh;
+	height: 5vh;
+	border-radius: 100%;
+}
+
 .mail_btn {
 	z-index: 3;
 	background: linear-gradient( 45deg, #3b3b3b, #1d1d1d);
