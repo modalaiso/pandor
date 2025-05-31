@@ -216,31 +216,31 @@
             let currentIndex = 0;
         
             function scrollToIndex(index) {
-              const slides = slider.querySelectorAll('.portofolio_slide');
-              if (slides[index]) {
-                slider.scrollTo({
-                  left: index * slideWidth,
-                  behavior: 'smooth'
-                });
-              }
+                const slides = slider.querySelectorAll('.portofolio_slide');
+                if (slides[index]) {
+                    slider.scrollTo({
+                    left: index * slideWidth,
+                    behavior: 'smooth'
+                    });
+                }
             }
         
             scrollLeftBtn.addEventListener('click', () => {
-              const totalSlides = slider.querySelectorAll('.portofolio_slide').length;
-              currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-              scrollToIndex(currentIndex);
+                const totalSlides = slider.querySelectorAll('.portofolio_slide').length;
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                scrollToIndex(currentIndex);
             });
           
             scrollRightBtn.addEventListener('click', () => {
-              const totalSlides = slider.querySelectorAll('.portofolio_slide').length;
-              currentIndex = (currentIndex + 1) % totalSlides;
-              scrollToIndex(currentIndex);
+                const totalSlides = slider.querySelectorAll('.portofolio_slide').length;
+                currentIndex = (currentIndex + 1) % totalSlides;
+                scrollToIndex(currentIndex);
             });
           
             setInterval(() => {
-              const totalSlides = slider.querySelectorAll('.portofolio_slide').length;
-              currentIndex = (currentIndex + 1) % totalSlides;
-              scrollToIndex(currentIndex);
+                const totalSlides = slider.querySelectorAll('.portofolio_slide').length;
+                currentIndex = (currentIndex + 1) % totalSlides;
+                scrollToIndex(currentIndex);
             }, 30000);
         </script>          
     </body>
