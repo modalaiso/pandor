@@ -420,6 +420,14 @@ blockquote {
 	text-align: center;
 }
 
+.p_wrap2 {
+	font-size: 1.3rem;
+	margin-top: 2vh;
+	color: #1d1d1d;
+	margin: 0 15vh;
+	text-align: center;
+}
+
 .citation .ec {
 	opacity: 0;
 	pointer-events: none;
@@ -555,6 +563,7 @@ blockquote {
 		height: 50vw;
 	}
 
+	.p_wrap2,
 	.p_wrap {
 		margin-top: 2vh;
 		margin-left: 2vh;
