@@ -541,8 +541,9 @@ blockquote {
 	  	font-size: 1.1rem;
 	  	padding: 0 20px;
 	}
+
 	.h2 {
-		font-size: 2.2rem;
+		font-size: 1.8rem;
 	}
 
 	.custom-grid {
@@ -561,7 +562,7 @@ blockquote {
 	}
 
 	.text-box  h3{
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 		text-align: center;
 		margin: auto;
 	}
@@ -636,13 +637,9 @@ blockquote {
 		width: 5vh;
 		height: 5vh;
 	}
-
-	.button_wrapper2 {
-		padding-left: 10vh;
-	}
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.portofolio_slide {
 		padding: 0 10vw;
 		flex-direction: column;
@@ -657,9 +654,16 @@ blockquote {
 
 .button_wrapper2 {
 	background: #64350212;
-	display: flex;
-	padding-left: 15vh;
+	padding-left: 20vh;
 	padding-bottom: 5vh;
+}
+
+@media screen and (max-width: 768px) {
+	.button_wrapper2 {
+		display: flex;
+		justify-content: center;
+		padding-left: 0;
+	}
 }
 
 .animated-button {
