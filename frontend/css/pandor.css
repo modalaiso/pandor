@@ -624,6 +624,22 @@ blockquote {
 	.ab {
 		display: none;
 	}
+
+	.mail_btn {
+		width: 11vh;
+		height: 11vh;
+		bottom: 0.5em;
+		right: 0.5em;
+	}
+
+	.lucide-mail-icon {
+		width: 5vh;
+		height: 5vh;
+	}
+
+	.button_wrapper2 {
+		padding-left: 10vh;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -642,7 +658,6 @@ blockquote {
 .button_wrapper2 {
 	background: #64350212;
 	display: flex;
-	justify-content: flex-start;
 	padding-left: 15vh;
 	padding-bottom: 5vh;
 }
@@ -656,7 +671,7 @@ blockquote {
 	border: 4px solid;
 	border-color: transparent;
 	font-size: 16px;
-	background-color: #1d1d1d;
+	background-color: #2e2e2e;
 	border-radius: 100px;
 	box-shadow: #1d1d1d;
 	font-weight: 600;
@@ -726,7 +741,6 @@ blockquote {
   
   .animated-button:active {
 	scale: 0.95;
-	box-shadow: 0 0 0 4px #3d3d3d;
   }
   
   .animated-button:hover .circle {
