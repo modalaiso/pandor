@@ -627,10 +627,10 @@ blockquote {
 	}
 
 	.mail_btn {
-		width: 11vh;
-		height: 11vh;
-		bottom: 0.5em;
-		right: 0.5em;
+		width: 9vh;
+		height: 9vh;
+		bottom: 1em;
+		right: 1em;
 	}
 
 	.lucide-mail-icon {
