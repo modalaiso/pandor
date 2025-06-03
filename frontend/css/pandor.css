@@ -365,15 +365,15 @@ li {
 }
 
 .nav-button:hover {
-	background: rgba(0, 0, 0, 0.6);
+	background: #00000099;
 }
 
 .nav-button.left {
-	left: 100px;
+	left: 10vh;
 }
 
 .nav-button.right {
-	right: 100px;
+	right: 10vh;
 }
 
 hr {
