@@ -619,6 +619,10 @@ blockquote {
 		margin-right: 2vh;
 	}
 
+	.citation {
+		height: 350px;
+	}
+
 	.mail_btn {
 		bottom: 1em;
 		right: 1em;
