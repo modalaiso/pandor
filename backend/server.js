@@ -10,8 +10,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'frontend', 'pandor.html'));
 });
 
-app.get('/nos-serveices', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'frontend', 'nos-serveices.html'));
+app.get('/nos-services', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'frontend', 'nos-services.html'));
 });
 
 app.listen(PORT, () => {
