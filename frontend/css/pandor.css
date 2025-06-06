@@ -758,3 +758,27 @@ blockquote {
 	height: 220px;
 	opacity: 1;
 }
+
+.nav-f {
+	padding-top: 7px;
+	
+}
+
+.nav-f a{
+	color: #bbb;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.nav-f a:hover {
+	color: #f0f0f0;
+}
+
+.social-links a {
+	color: #bbb;
+	transition: color 0.3s;
+}
+
+.social-links a:hover {
+	color: #f0f0f0;
+}
