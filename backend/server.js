@@ -10,6 +10,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'frontend', 'pandor.html'));
 });
 
+app.get('/nos-services', (req, res) => {
+  res.sendFile(__dirname+'/frontend/nos-services.html');
+
 app.listen(PORT, () => {
   console.log(`Serveur lancé sur : http://localhost:${PORT}`);
 });
