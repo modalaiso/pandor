@@ -1,0 +1,15 @@
+.nav_logo a {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	text-decoration: none;
+	color: #1d1d1d;
+}
+
+.logo {
+	background: linear-gradient( rgba(28, 28, 28, 0.651), rgba(0, 0, 0));
+	max-width: 35px;
+	height: auto;
+	border-radius: 9px;
+	box-shadow: -5px 4px 14px 0px rgb(0 0 0 /60%);
+}
