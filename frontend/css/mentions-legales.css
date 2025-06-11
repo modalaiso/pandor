@@ -8,3 +8,14 @@
     font-size: 1.2em;
     color: #1d1d1dcb;
 }
+
+@media screen and (max-width: 768px) {
+    .h1-mn {
+        font-size: 1.5em;
+    }
+
+    .h2-mn,
+    .c-mn {
+        font-size: 1em;
+    }
+}
