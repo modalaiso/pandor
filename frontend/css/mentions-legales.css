@@ -1,0 +1,10 @@
+.h1-mn {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.h2-mn,
+.c-mn {
+    font-size: 1.2em;
+    color: #1d1d1dcb;
+}
