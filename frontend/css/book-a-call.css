@@ -1,3 +1,23 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+ 	font-family: Raleway, sans-serif;
+ 	background-color: #f0f0f0;
+ 	color: #1d1d1d;
+ 	margin: 0;
+ 	padding: 0;
+	text-decoration: none;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:15px 0 0 0;
+}
+
 .nav_logo a {
 	display: flex;
 	align-items: center;
