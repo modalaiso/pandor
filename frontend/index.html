@@ -32,12 +32,10 @@
                                     <h2>Pandor</h2>
                                 </a>
                             </div>
-                            <button class="menu-toggle">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
-                                    <path d="M4 12h16"/>
-                                    <path d="M4 18h16"/>
-                                    <path d="M4 6h16"/>
-                                </svg>
+                            <button class="menu-toggle" aria-label="Menu">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
                             </button>
                             <div class="nav_links">
                                 <ul>
@@ -314,13 +312,15 @@
             }, 30000);
         </script>
         <script>
-            const toggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav_links");
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav_links");
+    const ab = document.querySelector(".ab");
 
-toggle.addEventListener("click", () => {
-	navLinks.classList.toggle("open");
-});
-
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        navLinks.classList.toggle("open");
+        ab.classList.toggle("open");
+    });
         </script>
     </body>
 </html>

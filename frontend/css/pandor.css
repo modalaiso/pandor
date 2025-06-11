@@ -897,3 +897,72 @@ button.learn-more {
 		display: flex;
 	}
 }
+
+/* Bouton burger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.bar {
+    height: 2px;
+    width: 100%;
+    background-color: #1d1d1d;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+/* Animation en croix */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(3.5px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-3.5px);
+}
+
+/* Menu déroulant */
+.nav_links {
+    display: flex;
+    gap: 60px;
+}
+
+@media (max-width: 768px) {
+    .nav_links, .ab {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        gap: 30px;
+        padding: 20px 0;
+        opacity: 0;
+        transform: translateY(-400px);
+        pointer-events: none;
+        transition: all 0.4s ease;
+        z-index: 99;
+    }
+
+    .nav_links.open,  .ab.open{
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
