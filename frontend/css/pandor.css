@@ -921,7 +921,7 @@ button.learn-more {
 
 /* Animation en croix */
 .menu-toggle.active .bar:nth-child(1) {
-    transform: rotate(45deg) translateY(3.5px);
+    transform: rotate(45deg) translateY(6.9px);
 }
 
 .menu-toggle.active .bar:nth-child(2) {
@@ -929,7 +929,7 @@ button.learn-more {
 }
 
 .menu-toggle.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translateY(-3.5px);
+    transform: rotate(-45deg) translateY(-6.9px);
 }
 
 /* Menu déroulant */
@@ -939,7 +939,7 @@ button.learn-more {
 }
 
 @media (max-width: 768px) {
-    .nav_links, .ab {
+    .nav_links {
         position: absolute;
         top: 60px;
         left: 0;
