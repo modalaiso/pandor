@@ -41,6 +41,20 @@
                                 <ul>
                                     <li><a href="nos-services">Nos services</a></li>
                                     <li><a href="#portofolio">Nos creation</a></li>
+                                    <li class="mobile-only">
+                                        <a href="book-a-call" style="text-decoration: none;">
+                                            <button class="animated-button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                                                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                                                </svg>
+                                                <span class="text">Réserver un appel</span>
+                                                <span class="circle"></span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                                                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </li>        
                                 </ul>
                             </div>
                             <div class="ab">
@@ -150,7 +164,7 @@
                             </svg>
                       </button>
                     </div>
-                    <div class="button_wrapper2">
+                    <!--<div class="button_wrapper2">
                         <a href="https://wa.me/+2250153791856"  class="b">
                             <button class="button">
                                 <p class="b-text">Nous contacter</p>
@@ -159,7 +173,7 @@
                                 </svg>
                             </button>
                         </a>
-                    </div>
+                    </div>-->
                   </div>                  
                 </div>
                 <div class="about_wrapper">
@@ -314,12 +328,10 @@
         <script>
     const toggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav_links");
-    const ab = document.querySelector(".ab");
 
     toggle.addEventListener("click", () => {
         toggle.classList.toggle("active");
         navLinks.classList.toggle("open");
-        ab.classList.toggle("open");
     });
         </script>
     </body>

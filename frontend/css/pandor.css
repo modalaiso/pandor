@@ -509,9 +509,8 @@ blockquote {
 	transform: scale(0.96);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	.menu-toggle{
-		display: inline-block;
 		align-self: center;  
 	}
 	
@@ -664,7 +663,7 @@ blockquote {
 	padding-bottom: 5vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	.button_wrapper2 {
 		display: flex;
 		justify-content: center;
@@ -871,7 +870,7 @@ button.learn-more {
 	color: #f0f0f0;
    }
 
-   @media (max-width: 768px) {
+   @media (max-width: 992px) {
 
 	.menu-toggle {
 		display: block;
@@ -885,7 +884,7 @@ button.learn-more {
 		left: 0;
 		width: 100%;
 		background-color: white;
-		padding: 20px;
+		padding: /*2*/0px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		flex-direction: column;
 		align-items: center;
@@ -938,7 +937,7 @@ button.learn-more {
     gap: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .nav_links {
         position: absolute;
         top: 60px;
@@ -948,7 +947,7 @@ button.learn-more {
         align-items: center;
         background-color: white;
         gap: 30px;
-        padding: 20px 0;
+        padding: /*20px*/ 0;
         opacity: 0;
         transform: translateY(-400px);
         pointer-events: none;
@@ -956,7 +955,7 @@ button.learn-more {
         z-index: 99;
     }
 
-    .nav_links.open,  .ab.open{
+    .nav_links.open {
         opacity: 1;
         transform: translateY(0);
         pointer-events: auto;
@@ -964,5 +963,32 @@ button.learn-more {
 
     .menu-toggle {
         display: flex;
+    }
+
+	.nav_links a::after {
+		display: none;
+	}
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .mobile-only {
+        display: block;
+        text-align: center;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only .animated-button {
+        margin-top: 10px;
     }
 }
