@@ -965,6 +965,7 @@ button.learn-more:hover .button-text {
 	}
 	.nav_links ul {
 		display: block;
+		padding-left: 15px;
 	}
 
 	.nav_links li {
