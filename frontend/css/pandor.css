@@ -896,7 +896,6 @@ button.learn-more:hover .button-text {
 	}
 }
 
-/* Bouton burger */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -917,7 +916,6 @@ button.learn-more:hover .button-text {
     border-radius: 5px;
 }
 
-/* Animation en croix */
 .menu-toggle.active .bar:nth-child(1) {
     transform: rotate(45deg) translateY(6.9px);
 }
@@ -930,7 +928,6 @@ button.learn-more:hover .button-text {
     transform: rotate(-45deg) translateY(-6.9px);
 }
 
-/* Menu déroulant */
 .nav_links {
     display: flex;
 }
@@ -938,7 +935,7 @@ button.learn-more:hover .button-text {
 @media (max-width: 992px) {
     .nav_links {
         position: absolute;
-        top: 63.2px;
+        top: 65px;
         left: 40%;
         width: 60%;
         align-items: center;
