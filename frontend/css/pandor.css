@@ -794,14 +794,14 @@ button.learn-more {
 	padding: 0;
 	font-size: inherit;
 	font-family: inherit;
-   }
+}
    
-   button.learn-more {
+button.learn-more {
 	width: 13rem;
 	height: auto;
-   }
+}
    
-   button.learn-more .circle {
+button.learn-more .circle {
 	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	position: relative;
 	display: block;
@@ -810,26 +810,26 @@ button.learn-more {
 	height: 3rem;
 	background: #1d1d1d;
 	border-radius: 1.625rem;
-   }
+}
    
-   button.learn-more .circle .icon {
+button.learn-more .circle .icon {
 	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	margin: auto;
 	background: #f0f0f0;
-   }
+}
    
-   button.learn-more .circle .icon.arrow {
+button.learn-more .circle .icon.arrow {
 	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	left: 0.625rem;
 	width: 1.125rem;
 	height: 0.125rem;
 	background: none;
-   }
+}
    
-   button.learn-more .circle .icon.arrow::before {
+button.learn-more .circle .icon.arrow::before {
 	position: absolute;
 	content: "";
 	top: -0.29rem;
@@ -839,9 +839,9 @@ button.learn-more {
 	border-top: 0.125rem solid #f0f0f0;
 	border-right: 0.125rem solid #f0f0f0;
 	transform: rotate(45deg);
-   }
+}
    
-   button.learn-more .button-text {
+button.learn-more .button-text {
 	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 	position: absolute;
 	top: 0;
@@ -855,23 +855,22 @@ button.learn-more {
 	line-height: 1.6;
 	text-align: center;
 	text-transform: uppercase;
-   }
+}
    
-   button.learn-more:hover .circle {
+button.learn-more:hover .circle {
 	width: 100%;
-   }
+}
    
-   button.learn-more:hover .circle .icon.arrow {
+button.learn-more:hover .circle .icon.arrow {
 	background: #f0f0f0;
 	transform: translate(1rem, 0);
-   }
+}
    
-   button.learn-more:hover .button-text {
+button.learn-more:hover .button-text {
 	color: #f0f0f0;
-   }
+}
 
-   @media (max-width: 992px) {
-
+@media (max-width: 992px) {
 	.menu-toggle {
 		display: block;
 		cursor: pointer;
@@ -966,6 +965,10 @@ button.learn-more {
 	}
 	.nav_links ul {
 		display: block;
+	}
+
+	.nav_links li {
+		padding: 7px 0 7px 0;
 	}
 }
 
