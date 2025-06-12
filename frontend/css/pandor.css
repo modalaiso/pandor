@@ -887,7 +887,7 @@ button.learn-more:hover .button-text {
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		align-items: center;
 		z-index: 2;
-		border-radius: 10px;
+		border-radius: 10px 0 0 10px;
 		filter: drop-shadow(2px 4px 6px #000);
 	}
 
