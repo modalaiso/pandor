@@ -946,7 +946,6 @@ button.learn-more {
         background-color: #f0f0f0;
         padding: 0;
         opacity: 0;
-        transform: translateX(300px);
         pointer-events: none;
         transition: all 0.4s ease;
         z-index: 99;
