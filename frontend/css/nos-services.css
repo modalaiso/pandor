@@ -158,3 +158,10 @@ input {
         height: 24px;
     }
 }
+
+hr {
+	margin: 0 12vh 3vh 12vh;
+	border: none;
+	height: 2px;
+	background: linear-gradient(-45deg, transparent, #1d1d1d38, transparent);
+}
