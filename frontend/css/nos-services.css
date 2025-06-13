@@ -1,5 +1,5 @@
 :root {
-    --packs_bc: #e6e6e6;
+    --packs_bc: #ff87002e;
     --packs_tc: #393939;
 }
 
@@ -145,10 +145,6 @@ input {
 @media (max-width: 768px) {
     .packs_wrapper {
         margin: 15px;
-    }
-
-    .main {
-        flex-direction: column;
     }
 
     .lucide-map-pin {
