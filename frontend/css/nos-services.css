@@ -138,6 +138,10 @@ input {
 	opacity: 1;
 }
 
+.main {
+    flex-direction: column-reverse;
+}
+
 @media (max-width: 768px) {
     .packs_wrapper {
         margin: 15px;
@@ -154,7 +158,6 @@ input {
 
     .p {
         padding: 0 20px 50px;
-        margin: 0;
     }
 
     .h3 {
