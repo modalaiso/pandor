@@ -34,6 +34,35 @@ body {
 	box-shadow: -5px 4px 14px 0px rgb(0 0 0 /60%);
 }
 
+.mail_btn {
+	z-index: 100;
+	background: linear-gradient( 45deg, #3b3b3b, #1d1d1d);
+	color: #f1f1f1;
+	cursor: pointer;
+	border-radius: 999px;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	transition-property: all;
+	transition-duration: .2s;
+	transition-timing-function: ease;
+	display: flex;
+	position: fixed;
+	bottom: 2.5em;
+	right: 2.5em;
+	border: none;
+	box-shadow: inset 0 6px 12px #ffffff26, 0 8px 16px #0000003d, 0 4px 8px #0000000f, 0 2px 4px #0000000f, 0 1px 2px #0000000f, inset 0 4px 5px #ffffff08, inset 0 1.5px 1.5px #ffffff08, inset 0 .75px .75px #ffffff0a, inset 0 .25px .25px #ffffff0f;
+}
+  
+.mail_btn:hover {
+	transform: scale(1.08);
+}
+
+.mail_btn:active {
+	transform: scale(0.96);
+}
+
 .iframe-container {
 	background-color: #f5f5f5;
 	padding: 16px;
