@@ -7,7 +7,7 @@
     background-color: var(--packs_bc);
     border-radius: 40px;
     color: var(--packs_tc);
-    padding-bottom:40px;
+    padding:0 25px 50px;
     margin: 50px;
 }
 
@@ -21,8 +21,6 @@
 .offre {
     display: flex;
     gap: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-top: 15px;
     align-items: center;
 }
@@ -36,8 +34,6 @@
 .offre_element {
     display: flex;
     gap: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
     align-items: center;
 }
 
@@ -144,6 +140,21 @@ input {
 
 @media (max-width: 992px) {
     .packs_wrapper {
+        margin: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .packs_wrapper {
         margin: 15px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .lucide-map-pin {
+        width: 24px;
+        height: 24px;
     }
 }
