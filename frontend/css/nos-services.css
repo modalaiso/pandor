@@ -141,3 +141,9 @@ input {
 	height: 220px;
 	opacity: 1;
 }
+
+@media (max-width: 992px) {
+    .packs_wrapper {
+        margin: 15px;
+    }
+}
