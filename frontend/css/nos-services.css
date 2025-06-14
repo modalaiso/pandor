@@ -61,7 +61,7 @@ input {
 	font-size: 16px;
 	background-color: #2e2e2e;
 	border-radius: 100px;
-	box-shadow: #1d1d1d;
+	box-shadow: -5px 4px 14px 0px #1d1d1d;
 	font-weight: 600;
 	color: #f0f0f0;
 	cursor: pointer;
