@@ -137,6 +137,10 @@ input {
 	opacity: 1;
 }
 
+.swd {
+	margin-top: 50px;
+}
+
 .h3 {
     font-size: 1.8em;
 }
@@ -157,6 +161,10 @@ hr {
 
     .p {
         padding: 0 20px 50px;
+    }
+
+    .swd {
+	margin-top: 10px;
     }
 
     .h3 {
