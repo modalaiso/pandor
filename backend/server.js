@@ -19,6 +19,13 @@ app.get('/:page', (req, res, next) => {
   });
 });
 
+app.get('/:page', (req, res, next) => {
+  const filePath = path.join(__dirname, '../frontend/nos-creations', `${req.params.page}.html`);
+  res.sendFile(filePath, (err) => {
+    if (err) next(); // Si la page n'existe pas, on passe à la suite
+  });
+});
+
 // Route principale /
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/index.html'));
