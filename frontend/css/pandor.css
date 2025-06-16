@@ -82,7 +82,7 @@ li {
 .hero_main {
 	padding: 50px 0;
     background: linear-gradient(#1c1c1ca6),
-				url("../assets/img/banner.webp") no-repeat center center;
+				url("../assets/img/banner.png") no-repeat center center;
     background-size: cover;
 }
 
