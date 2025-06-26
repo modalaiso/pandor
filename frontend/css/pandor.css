@@ -342,6 +342,7 @@ li {
 }
 
 .portofolio_image {
+	margin-top:10px;
 	border-radius: 15px;
 	object-fit: cover;
 	width: 400px;
