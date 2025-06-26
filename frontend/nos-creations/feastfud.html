@@ -112,6 +112,9 @@
             }
 
             @media screen and (max-width: 1000px) {
+                h3 {
+                    font-size: 1.8em;
+                }
                 .img_hero {
                     display: none;
                 }
@@ -147,12 +150,6 @@
                 }
             }
 
-            .t3, .t4 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
             .menu_items {
                 margin-top: 50px;
                 margin-bottom: 50px;
@@ -165,21 +162,13 @@
             }
 
             @media screen and (max-width: 1000px) {
+
                 .menu_items {
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-
-                .t3,
-                .t4 {
-                    display: none;
-                }
-
-                .card {
-                width: 170px;
-                height: 234px;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    grid-column-gap: 10px;
+                    grid-row-gap: 20px;
                 }
                 
             }
@@ -190,8 +179,8 @@
                 --card-text: #1e293b;
                 --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 
-                width: 200px;
-                height: 264px;
+                width: 175px;
+                height: 254px;
                 background: var(--card-bg);
                 border-radius: 20px;
                 position: relative;
@@ -380,7 +369,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="t3">
+                                
                                 <div class="card">
                                     <div class="card__content">
                                         <div style="--bg-color: #a78bfa" class="card__image"></div>
@@ -393,8 +382,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                </div>
-                                <div class="t4">
+                                
+                                
                                 <div class="card">
                                     <div class="card__content">
                                         <div style="--bg-color: #a78bfa" class="card__image"></div>
@@ -407,7 +396,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                </div>
+                                
 
                             </div>
                         </div>
