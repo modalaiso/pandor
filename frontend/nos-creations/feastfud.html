@@ -27,10 +27,11 @@
                 display: flex;
                 justify-content: center;
                 box-shadow: 0px 5px 20px 2px #80808036;
-                padding: 15px;
+                padding: 15px 0;
                 text-align: center;
-                background: #f1e6cb8c;
+                background: #f1e6cbe3;
                 backdrop-filter: blur(5px);
+                z-index: 10000;
             }
 
             .h1rn {
@@ -103,11 +104,11 @@
                 flex-direction: column;
             }
 
-            hr {
-                margin: 0 12vh 3vh 12vh;
-                border: none;
-                height: 2px;
-                background: linear-gradient(-45deg, transparent, #1d1d1d38, transparent);
+            h3 {
+                font-family: "Cabin", sans-serif;
+                color: var(--text-color);
+                font-size: 2.5em;
+                margin-bottom: 20px;
             }
 
             @media screen and (max-width: 1000px) {
@@ -145,6 +146,169 @@
                     font-size: 4.5em;
                 }
             }
+
+            .t3, .t4 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .menu_items {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+
+            @media screen and (max-width: 1000px) {
+                .menu_items {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                .t3,
+                .t4 {
+                    display: none;
+                }
+                
+            }
+
+            .card {
+                --card-bg: #ffffff;
+                --card-accent: #7c3aed;
+                --card-text: #1e293b;
+                --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+
+                width: 200px;
+                height: 264px;
+                background: var(--card-bg);
+                border-radius: 20px;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+                box-shadow: var(--card-shadow);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                Ubuntu, Cantarell, sans-serif;
+            }
+
+            .card__content {
+                padding: 1.25em;
+                height: 85%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75em;
+                position: relative;
+                z-index: 2;
+            }
+
+            .card__image {
+                width: 100%;
+                height: 100px;
+                background: linear-gradient(45deg, #a78bfa, #8b5cf6);
+                border-radius: 12px;
+                transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .card__image::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                opacity: 0.5;
+            }
+
+            .card__text {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25em;
+            }
+
+            .card__title {
+                color: var(--card-text);
+                font-size: 1.1em;
+                margin: 0;
+                font-weight: 700;
+                transition: all 0.3s ease;
+            }
+
+            .card__description {
+                color: var(--card-text);
+                font-size: 0.75em;
+                margin: 0;
+                opacity: 0.7;
+                transition: all 0.3s ease;
+            }
+
+            .card__footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: auto;
+            }
+
+            .card__price {
+                color: var(--card-text);
+                font-weight: 700;
+                font-size: 1em;
+                transition: all 0.3s ease;
+            }
+
+            /* Hover Effects */
+            .card:hover {
+                transform: translateY(-10px);
+                box-shadow:
+                    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+
+            .card:hover .card__image {
+                transform: translateY(-5px) scale(1.03);
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            }
+
+            .card:hover .card__title {
+                color: var(--card-accent);
+                transform: translateX(2px);
+            }
+
+            .card:hover .card__description {
+                opacity: 1;
+                transform: translateX(2px);
+            }
+
+            .card:hover .card__price {
+                color: var(--card-accent);
+                transform: translateX(2px);
+            }
+
+            /* Active State */
+            .card:active {
+                transform: translateY(-5px) scale(0.98);
+            }
+
+            /* Animations */
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.2);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+            }
+
         </style>
     </head>
     <body>
@@ -181,11 +345,70 @@
                         <img src="/assets/img/burger.jpg" alt="Burger" style="border-radius: 50px; object-fit: cover;" class="img_hero">
                     </div>
                 </div>
-                <hr>
-                <div class="content">
-                    <div style="text-align: center; margin-top: 100px;">
+                <section class="menu_section">
+                    <div class="content">
+                        <div style="text-align: center; margin-top: 100px;">
+                            <h3 class="section_title">Notre menu</h3>
+                            <div class="menu_items">
+                                <div class="card">
+                                    <div class="card__content">
+                                        <div style="--bg-color: #a78bfa" class="card__image"></div>
+                                        <div class="card__text">
+                                            <p class="card__title">Premium Design</p>
+                                            <p class="card__description">Hover to reveal stunning effects</p>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price">$49.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card__content">
+                                        <div style="--bg-color: #a78bfa" class="card__image"></div>
+                                        <div class="card__text">
+                                            <p class="card__title">Premium Design</p>
+                                            <p class="card__description">Hover to reveal stunning effects</p>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price">$49.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="t3">
+                                <div class="card">
+                                    <div class="card__content">
+                                        <div style="--bg-color: #a78bfa" class="card__image"></div>
+                                        <div class="card__text">
+                                            <p class="card__title">Premium Design</p>
+                                            <p class="card__description">Hover to reveal stunning effects</p>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price">$49.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="t4">
+                                <div class="card">
+                                    <div class="card__content">
+                                        <div style="--bg-color: #a78bfa" class="card__image"></div>
+                                        <div class="card__text">
+                                            <p class="card__title">Premium Design</p>
+                                            <p class="card__description">Hover to reveal stunning effects</p>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__price">$49.99</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
+                
             </div>
         </main>
         
