@@ -68,9 +68,14 @@
             .rt_btn {
                 border: none;
                 background: #ca7641;
-                color: var(--text-color);
+                color: var(--b-color);
                 font-family: "league spartan", sans-serif;
                 padding: 0 37px;
+                transition: all 0.3s ease;
+            }
+
+            .rt_btn:hover {
+                background: #a15e34;
             }
 
             .rt_btn h2,
@@ -84,6 +89,11 @@
                 background: none;
                 font-family: "league spartan", sans-serif;
                 padding: 0 70px;
+                transition: all 0.3s ease;
+            }
+
+            .vm_btn:hover {
+                background: #9191916e;
             }
 
             .cta_btn {
@@ -91,6 +101,13 @@
                 gap: 15px;
                 margin-top: 5px;
                 flex-direction: column;
+            }
+
+            hr {
+                margin: 0 12vh 3vh 12vh;
+                border: none;
+                height: 2px;
+                background: linear-gradient(-45deg, transparent, #1d1d1d38, transparent);
             }
 
             @media screen and (max-width: 1000px) {
@@ -164,6 +181,7 @@
                         <img src="/assets/img/burger.jpg" alt="Burger" style="border-radius: 50px; object-fit: cover;" class="img_hero">
                     </div>
                 </div>
+                <hr>
                 <div class="content">
                     <div style="text-align: center; margin-top: 100px;">
                     </div>
