@@ -22,7 +22,7 @@
 
             .header {
                 position: fixed;
-                top: 0;
+                top: 50px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -49,7 +49,7 @@
             .hero_wrapper {
                 display: flex;
                 justify-content: center;
-                margin-top: 150px;
+                margin-top: 250px;
                 gap: 40px;
             }
 
@@ -309,9 +309,23 @@
                 }
             }
 
+
+
+            .retour:hover,
+            .retour a:hover {
+                color: #a15e34 !important;
+            }
+
         </style>
     </head>
     <body>
+        <div class="retour" style="transition: 0.3s ease; z-index: 10001; font-family: Raleway, sans-serif; display: flex; gap: 5px; position: fixed; top: 0; width: 100%; justify-content: center; align-items: center; background: #341c12; color: var(--b-color); padding: 15px 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left">
+                <path d="m12 19-7-7 7-7"/>
+                <path d="M19 12H5"/>
+            </svg>
+            <a href="/" style="color: var(--b-color);">Retour chez Pandor</a>
+        </div>
         <header>
             <div class="header">
                 <a href="#">
@@ -348,8 +362,8 @@
                 <section class="menu_section">
                     <div class="content">
                         <div style="text-align: center; margin-top: 100px;">
-                            <h3 class="section_title">Notre menu</h3>
-                            <div class="menu_items">
+                            <h3 class="section_title" style="text-align: center;">Notre menu</h3>
+                            <div class="menu_items" style="text-align: center;">
                                 <div class="card">
                                     <div class="card__content">
                                         <div style="--bg-color: #ededed" class="card__image">
@@ -410,13 +424,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-
                             </div>
                         </div>
                     </div>
                 </section>
-                
+                <section class="about_section">
+
+                </section>
             </div>
         </main>
         
