@@ -180,9 +180,9 @@
             }
 
             .card {
-                --card-bg: #ece8dc;
-                --card-accent: #1e293b;
-                --card-text: #1e293b;
+                --card-bg: #ece6d3;
+                --card-accent: #ca7641;
+                --card-text: var(--text-color);
                 --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 
                 width: 195px;
@@ -651,7 +651,16 @@
               </div>
             </div>
           </footer>
-                      
+          <hr style="border: none; height: 1px; background: repeating-linear-gradient(to right, var(--text-color) 0 5px, transparent 5px 10px); animation: moveDash 2s linear infinite; margin: 0; background-size: 10px 1px; background-repeat: repeat-x; animation-name: moveDash; animation-duration: 2s; animation-timing-function: linear; animation-iteration-count: infinite;">
+        <style>
+            @keyframes moveDash {
+                from { background-position: 0 0; }
+                to { background-position: 100% 0; }
+            }
+        </style>
+        <a href="/" target="_blank" style="text-decoration: none;">
+            <p style="text-align: end; margin: 0; padding: 10px; font-size: 1em; background-color: var(--text-color); color: var(--b-color);">Made by Pandor ⭐</p>  
+        </a>
         <script>
           // Optionnel : surligner automatiquement le jour actuel
           const jours = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
