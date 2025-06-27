@@ -380,6 +380,76 @@
                     align-items: flex-start;
                 }
             }*/
+
+            .footer {
+                background-color: var(--text-color);
+                color: var(--b-color);
+                padding: 40px 20px;
+                font-family: 'Segoe UI', sans-serif;
+            }
+
+            .footer-content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 1100px;
+                margin: auto;
+                gap: 30px;
+            }
+
+            .footer-logo h2 {
+                font-size: 2rem;
+                line-height: 1.2;
+                margin-bottom: 10px;
+                font-family: "chewy", sans-serif;
+            }
+
+            .footer-logo p {
+                font-size: 0.9rem;
+                color: var(--b-color);
+            }
+
+            .footer-links h3,
+            .footer-contact h3 {
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+                color: var(--b-color);
+            }
+
+            .footer-links ul {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 15px;
+            }
+
+            .footer-links ul li a {
+                color: var(--b-color);
+                text-decoration: none;
+                display: block;
+                margin: 4px 0;
+            }
+
+            .social-icons a span {
+                font-size: 1.5rem;
+                margin-right: 10px;
+            }
+
+            .footer-contact p {
+                margin: 6px 0;
+                font-size: 0.95rem;
+            }
+
+            @media (max-width: 768px) {
+                .footer-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .social-icons {
+                    justify-content: center;
+                }
+            }
+
         </style>
     </head>
     <body>
@@ -541,7 +611,47 @@
                 </section>
             </div>
         </main>
-                    
+        <footer class="footer">
+            <div class="footer-content">
+              <div class="footer-logo">
+                <h2>FEAST<br>FUD</h2>
+                <p>© 2024 Feast Fud.<br>Tous droits réservés.</p>
+              </div>
+              <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                  <li><a href="#">Accueil</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">À Propos</a></li>
+                </ul>
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/pandor_agency" target="_blank" title="Instagram" style="color: var(--b-color);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/pandor_agency" target="_blank" title="X (Twitter)" style="color: var(--b-color);">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                                x="0px" y="0px" width="24" height="24"
+                                viewBox="0 0 24 24"
+                                fill="currentColor">
+                            <path d="M 17.476562 2.9902344 A 1.0001 1.0001 0 0 0 16.724609 3.3691406 L 12.509766 8.5546875 L 9.0566406 3.7714844 C 8.7066406 3.2874844 8.1458281 3 7.5488281 3 L 4.078125 3 C 3.420125 3 3.0388281 3.7462969 3.4238281 4.2792969 L 9.3339844 12.462891 L 3.7246094 19.369141 A 1.0001 1.0001 0 1 0 5.2753906 20.630859 L 10.548828 14.142578 L 14.943359 20.228516 C 15.293359 20.712516 15.854172 21 16.451172 21 L 19.921875 21 C 20.579875 21 20.961172 20.253703 20.576172 19.720703 L 13.724609 10.232422 L 18.275391 4.6308594 A 1.0001 1.0001 0 0 0 17.476562 2.9902344 z M 6.4101562 5 L 7.4765625 5 L 17.587891 19 L 16.523438 19 L 6.4101562 5 z"></path>
+                        </svg>                           
+                    </a>
+                </div>
+              </div>
+              <div class="footer-contact">
+                <h3>Contactez-nous</h3>
+                <p>Côte d'Ivoire, Abidjan</p>
+                <p>Téléphone: +225 05 86 92 56 66</p>
+                <p>Email: pandor.agence@gmail.com</p>
+              </div>
+            </div>
+          </footer>
+                      
         <script>
           // Optionnel : surligner automatiquement le jour actuel
           const jours = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
