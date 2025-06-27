@@ -84,7 +84,7 @@ li {
     background: linear-gradient(#1c1c1ca6),
 				url("../assets/img/banner.png") no-repeat center center;
     background-size: cover;
-	background-color: #3b3b3b;
+	background-color: linear-gradient(45deg, #2d2d2d, #1d1d1d);
 }
 
 .text_container {
