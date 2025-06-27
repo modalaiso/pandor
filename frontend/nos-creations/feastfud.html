@@ -604,6 +604,17 @@
                     gap: 20px;
                 }
             }
+
+            @media (max-width: 768px) {
+                body, html {
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                }
+
+                body::-webkit-scrollbar {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
