@@ -316,6 +316,70 @@
                 color: #a15e34 !important;
             }
 
+            .about_section {
+                color: var(--text-color);
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            h4 {
+                font-family: "Cabin", sans-serif;
+                font-size: 1.5em;
+                margin: 0;
+            }
+
+            p {
+                font-family: "Cabin", sans-serif;
+                font-size: 1.2em;
+                line-height: 1.5;
+            }
+
+            .horaires-container {
+                max-width: 500px;
+                margin: auto;
+                padding: 20px 30px;
+                color: var(--text-color);
+            }
+
+            .horaires-container h2 {
+                text-align: center;
+                color: var(--text-color);
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+
+            .horaire {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid #4b291a6c;
+                font-size: 1.05rem;
+            }
+
+            .horaire:last-child {
+                border-bottom: none;
+            }
+
+            .jour {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            .aujourdhui {
+                background-color: #341c1217;
+                font-weight: bold;
+                color: #ca7641;
+                border-radius: 8px;
+                padding: 8px;
+            }
+
+            /*@media (max-width: 480px) {
+                .horaire {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }*/
         </style>
     </head>
     <body>
@@ -431,10 +495,65 @@
                     </div>
                 </section>
                 <section class="about_section">
-
+                    <div class="content">
+                        <div style="text-align: center; margin-top: 100px;">
+                            <h3 class="section_title" style="text-align: center;">À propos de nous</h3>
+                            <div class="">
+                                <div style="padding-top: 20px; display: flex; gap: 5px; justify-content: center; align-items: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat-icon lucide-chef-hat">
+                                        <path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/>
+                                        <path d="M6 17h12"/>
+                                    </svg>
+                                    <h4>Qui sommes-nous?</h4>
+                                </div>
+                                <p><span style="color: var(--text-color); font-family: chewy, sans-serif;"><b>Feast Fud</b></span> est un petit restaurant local fondé par une équipe passionnée de cuisine rapide et savoureuse.<br>Nous proposons des plats faits maison, préparés avec des ingrédients frais et une touche d’originalité.</p>
+                            </div>
+                            <div class="">
+                                <div style="padding-top: 20px; display: flex; gap: 5px; justify-content: center; align-items: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-utensils-icon lucide-utensils">
+                                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                                        <path d="M7 2v20"/>
+                                        <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+                                    </svg>
+                                    <h4>Notre philosophie</h4>
+                                </div>
+                                <p>Nous voulons rendre la restauration rapide <b>plus généreuse, plus gourmande et plus vraie</b>.
+                                    <br>Chez nous, chaque plat est préparé avec soin, que ce soit un burger, un bowl ou un dessert.
+                                    <br>Notre objectif : <b>servir des repas simples, bons, et satisfaisants</b>, pour tous les goûts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section style="font-family: cabin, sans-serif;">
+                    <div class="horaires-container">
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+                        <h2>Horaires d’ouverture</h2>
+                        </div>
+                        <div class="horaire"><div class="jour"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg>Lundi</div><div>11h00 – 22h00</div></div>
+                        <div class="horaire"><div class="jour"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg>Mardi</div><div>11h00 – 22h00</div></div>
+                        <div class="horaire"><div class="jour"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg>Mercredi</div><div>11h00 – 22h00</div></div>
+                        <div class="horaire"><div class="jour"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg>Jeudi</div><div>11h00 – 22h00</div></div>
+                        <div class="horaire"><div class="jour"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg>Vendredi</div><div>11h00 – 23h00</div></div>
+                        <div class="horaire"><div class="jour"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg>Samedi</div><div>12h00 – 23h00</div></div>
+                        <div class="horaire"><div class="jour"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg>Dimanche</div><div>12h00 – 21h00</div></div>
+                      </div>
                 </section>
             </div>
         </main>
+                    
+        <script>
+          // Optionnel : surligner automatiquement le jour actuel
+          const jours = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+          const today = new Date().getDay();
+          const entries = document.querySelectorAll(".horaire");
+      
+          entries.forEach(entry => {
+            if (entry.textContent.includes(jours[today])) {
+              entry.classList.add("aujourdhui");
+            }
+          });
+        </script>
         
     </body>
 </html>
