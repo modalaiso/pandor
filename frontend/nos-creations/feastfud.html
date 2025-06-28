@@ -173,8 +173,8 @@
                 justify-content: center;
                 align-items: center;
                 gap: 30px;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 250px;
+                margin-right: 250px;
                 flex-wrap: wrap;
             }
 
@@ -183,6 +183,7 @@
                     width: 175px !important;
                     height: 254px !important;
                 }
+
                 .menu_items {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
@@ -515,6 +516,16 @@
                 transform: translate3d(100%, 0, 0);
             }
 
+            .hidden {
+                display: none;
+                opacity: 0;
+            }
+
+            .card.show {
+                display: block;
+                opacity: 1;
+            }
+
             .phone {
                 display: none;
             }
@@ -765,7 +776,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card hidden">
                                     <div class="card__content">
                                         <div style="--bg-color: #ededed" class="card__image">
                                             <img src="/assets/img/fondantcococoeur.png" alt="Fondant Choco-Cœur" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
@@ -780,7 +791,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card hidden">
                                     <div class="card__content">
                                         <div style="--bg-color: #ededed" class="card__image">
                                             <img src="/assets/img/cheesecakepassion.png" alt="Cheesecake Passion" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
@@ -795,7 +806,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card hidden">
                                     <div class="card__content">
                                         <div style="--bg-color: #ededed" class="card__image">
                                             <img src="/assets/img/fudfresh.png" alt="Cocktail Maison “Fud Fresh”" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
@@ -810,7 +821,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card hidden">
                                     <div class="card__content">
                                         <div style="--bg-color: #ededed" class="card__image">
                                             <img src="/assets/img/smoothiemangueananas.png" alt="Cocktail Maison “Smoothie Mangue-Ananas”" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
@@ -826,11 +837,11 @@
                                 </div>
                             </div>
                             <div style="margin-top: 50px; text-align: center;">
-                                <a href="/menu" style="text-decoration: none;">
-                                    <button class="vmc_btn">
+                                <!--<a href="/menu" style="text-decoration: none;">-->
+                                    <button class="vmc_btn" onclick="toggleMenuItems()" id="menuToggleBtn">
                                         <span>Voir plus</span>
                                     </button>
-                                </a>
+                                <!--</a>-->
                             </div>
                         </div>
                     </div>
@@ -972,5 +983,25 @@
                 }
             });
         </script>
+        <script>
+            function toggleMenuItems() {
+              const hiddenCards = document.querySelectorAll('.menu_items .card.hidden, .menu_items .card.show');
+              const btn = document.getElementById('menuToggleBtn');
+              const span = btn.querySelector('span');
+              const isHidden = hiddenCards[0].classList.contains("hidden");
+          
+              hiddenCards.forEach(card => {
+                if (isHidden) {
+                  card.classList.remove("hidden");
+                  card.classList.add("show");
+                } else {
+                  card.classList.add("hidden");
+                  card.classList.remove("show");
+                }
+              });
+          
+              span.textContent = isHidden ? "Voir moins" : "Voir plus";
+            }
+          </script>
     </body>
 </html>
