@@ -1079,3 +1079,33 @@ button.learn-more:hover .button-text {
     background: linear-gradient(45deg, #000000, #383838);
     box-shadow: inset 0px 0px 5px 0px #ffffff54;
 }
+
+.framework {
+	border: 1.2px solid #1d1d1d;
+	border-radius: 100px;
+	box-shadow: inset 0px 0px 5px 0px #ffffff54;
+	padding: 5px;
+	background: #5a52528c;
+	transition: all 0.3s ease;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1d1d1d;
+}
+
+.framework:hover {
+	transform: scale(1.05);
+	background: #5a52528c;
+	box-shadow: inset 0px 0px 5px 0px #ffffff54, 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.frameworks {
+	display: flex;
+	gap: 10px;
+	margin: 15px 0 0 10px;
+}
+
+a {
+	text-decoration: none !important;
+}
